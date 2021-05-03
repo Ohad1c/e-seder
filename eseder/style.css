@@ -1,0 +1,350 @@
+/* 
+Theme name: eseder
+Author: Ohad
+*/
+@font-face {
+  font-family: 'almoni-dl';
+  font-weight: 300;
+  /*(light)*/
+  font-style: normal;
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-300.eot');
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-300.eot#iefix') format('embedded-opentype'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-300.woff') format('woff'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-300.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'almoni-dl';
+  font-weight: 400;
+  /*(regular)*/
+  font-style: normal;
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-400.eot');
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-400.eot#iefix') format('embedded-opentype'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-400.woff') format('woff'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-400.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'almoni-dl';
+  font-weight: 700;
+  /*(bold)*/
+  font-style: normal;
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-700.eot');
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-700.eot#iefix') format('embedded-opentype'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-700.woff') format('woff'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-700.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'almoni-dl';
+  font-weight: 900;
+  /*(black)*/
+  font-style: normal;
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-900.eot');
+  src: url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-900.eot#iefix') format('embedded-opentype'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-900.woff') format('woff'),
+    url('http://minisite.kerenhagshama.co.il/assets/fonts/almoni/almoni-dl-aaa-900.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'almoni-dl';
+  color: #21221E;
+  font-weight: 300;
+  line-height: 1.6;
+  background: #efefef;
+  direction: rtl;
+  letter-spacing: -1px;
+}
+
+/* Header section */
+.header {
+  background: #fff;
+  color: #777;
+  font-size: 1.9rem;
+}
+
+.header nav {
+  width: 100%;
+}
+
+.header nav ul {
+  border: 1px solid black;
+}
+
+.header nav ul li {
+  border-left: 1px solid black;
+  font-weight: 400;
+/*  padding: 0.4rem 2rem;*/
+}
+
+.header nav ul li:last-child {
+  border-left: none;
+}
+
+.header nav ul li a,
+.header nav ul li a.nav-link {
+  padding: 0 !important;
+}
+
+.header nav ul li a span{
+  display: inline-block;
+  padding: 1rem 3rem;
+}
+
+.header ul .active,
+.header ul li span:hover {
+  background-color: #eb6c61;
+  color: white;
+}
+
+.navigation {
+  background: grey;
+}
+
+/* Showcase section */
+.showcase {
+  background-color: #8ed3d9;
+  padding: 5rem 0;
+}
+
+.showcase h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.showcase h2 {
+  font-size: 5rem;
+}
+
+.contact-form {
+  max-width: 100rem;
+  font-size: 2.4rem;
+  margin: auto;
+}
+
+.contact-form .col-md-12 div {
+  position: relative;
+}
+
+.contact-form .form-row div i {
+  position: absolute;
+  right: 1rem;
+  top: 1.2rem;
+  color: #fac247;
+}
+
+.contact-form input {
+  padding: 2.4rem 1.2rem;
+  padding-right: 4rem;
+  font-size: 2.2rem;
+}
+
+.contact-form button {
+  padding: 0.75rem 0.375rem;
+  font-size: 2.2rem;
+}
+
+.contact-form .form-control:focus,
+.contact-form button:focus {
+  border-color: #21221E;
+}
+
+.contact-form button {
+  background-color: #39536A;
+}
+
+.contact-form .btn-primary:hover,
+.contact-form .btn-primary:focus {
+  background-color: #fac247 !important;
+  color: #21221E;
+}
+
+.showcase .showcase__img {
+  position: relative;
+  top: 6rem;
+  z-index: 500;
+}
+
+/* About section */
+.about {
+  background-color: #364557;
+  /*  padding-top: 3rem;*/
+  color: #fff;
+  position: relative;
+}
+
+.about .about__box1 {
+  position: relative;
+  top: 12rem;
+  padding-bottom: 3rem;
+}
+
+.about .about__title-1 {
+  font-size: 4.5rem;
+}
+
+.about .about__description {
+  font-size: 2.4rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.about .about__title-2 {
+  font-size: 4.7rem;
+  font-weight: bold;
+}
+
+.about__process {
+  position: relative;
+  top: 15.6rem;
+}
+
+.about .about__process p {
+  font-size: 2.2rem;
+  color: #364557;
+  font-weight: 500;
+}
+
+.about .about__last {
+  background: white;
+  font-size: 2.5rem;
+  color: #364557;
+  padding-top: 20rem;
+  font-weight: 300;
+}
+
+.about .about__last p:last-child {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+#about {
+  background-color: purple;
+  height: 50px;
+  position: absolute;
+  top: -7rem;
+/*  visibility: hidden;*/
+}
+
+#advantages {
+  background-color: purple;
+  height: 50px;
+  position: absolute;
+  top: -10rem;
+  visibility: hidden;
+  
+}
+
+/* Advantages section */
+.advantages {
+  font-size: 2.7rem;
+  background-color: #eb6c61;
+  padding-top: 7rem;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.advantages ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 7rem;
+  margin-bottom: 7rem;
+}
+
+.advantages ul li a {
+  color: white;
+  padding: 2rem 1rem;
+  font-weight: bold
+}
+
+.advantages .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: rgb(94, 192, 202);
+}
+
+.advantages .tab-content {
+  line-height: 2;
+  font-size: 2.6rem;
+}
+
+.advantages .advantages__img {
+  position: relative;
+  top: 14rem;
+  z-index: 500;
+}
+
+/* Contact Us section */
+.contact {
+  background-color: #fac247;
+  padding-top: 25rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.contact .container {
+  position: relative;
+}
+
+.contact .contact__title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5rem;
+}
+
+.contact .contact__img {
+  position: absolute;
+  right: -13rem;
+  bottom: -8rem;
+}
+
+.contact .contact-form .col i {
+  color: #eb6c61;
+}
+
+.contact .contact-form button {
+  background-color: rgb(94, 192, 202);
+  border: none;
+}
+
+.contact .contact-form .btn-primary:hover,
+.contact .contact-form .btn-primary:focus {
+  background-color: #eb6c61 !important;
+  color: #21221E;
+}
+
+.contact .contact-form .col i {
+  right: 1.5rem;
+}
+
+/* Footer section */
+.footer {
+  font-size: 2.2rem;
+  background-color: black;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer .footer__img {
+  height: 4.4rem;
+}
+
+.footer .footer__text {
+  margin-bottom: 0;
+}
